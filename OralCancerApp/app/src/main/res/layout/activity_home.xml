@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="CancerTrack"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary"/>
+
+            <Button
+                android:id="@+id/logoutButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Capture, browse, or acquire an oral image from ESP32-CAM. The server will use the model selected by the DenseNet121 / MobileNet / EfficientNetB0 comparison."
+            android:layout_marginTop="12dp"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/captureButton"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:text="Capture"/>
+
+            <Button
+                android:id="@+id/browseButton"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:text="Browse"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/esp32Button"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Capture from ESP32-CAM"
+            android:layout_marginTop="8dp"/>
+
+        <ImageView
+            android:id="@+id/previewImage"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginTop="16dp"
+            android:background="#DDDDDD"
+            android:contentDescription="Selected oral image"
+            android:scaleType="centerCrop"/>
+
+        <Button
+            android:id="@+id/predictButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Upload and Predict"
+            android:layout_marginTop="14dp"/>
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"/>
+
+        <LinearLayout
+            android:id="@+id/resultCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/primary_dark"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/resultText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:id="@+id/confidenceText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/modelText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:layout_marginTop="6dp"/>
+
+            <TextView
+                android:id="@+id/messageText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:layout_marginTop="12dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/highlightTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AI Attention Highlight"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="18dp"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/highlightImage"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginTop="8dp"
+            android:background="#DDDDDD"
+            android:contentDescription="AI attention highlight"
+            android:scaleType="centerCrop"
+            android:visibility="gone"/>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,20 @@
+{
+  "model": "EfficientNetB0",
+  "image_size": [
+    100,
+    100
+  ],
+  "batch_size": 16,
+  "epochs_requested": 7,
+  "epochs_completed": 7,
+  "class_indices": {
+    "CANCER": 0,
+    "NON CANCER": 1
+  },
+  "test_samples": 150,
+  "accuracy": 0.8533333333333334,
+  "macro_precision": 0.8382034632034632,
+  "macro_recall": 0.875,
+  "macro_f1": 0.8453898050974513,
+  "best_model_path": "efficientnetb0_best.keras"
+}

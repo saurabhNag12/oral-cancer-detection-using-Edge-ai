@@ -1,0 +1,10 @@
+{
+  "best_model": "MobileNet",
+  "selection_rule": "Highest Macro F1; tie-break by Accuracy; then CANCER Recall",
+  "accuracy": 0.8866666666666667,
+  "macro_precision": 0.8678551216751557,
+  "macro_recall": 0.89,
+  "macro_f1": 0.8765192968863493,
+  "cancer_recall": 0.88,
+  "final_model_path": "best_oral_cancer_model.keras"
+}

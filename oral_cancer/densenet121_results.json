@@ -1,0 +1,20 @@
+{
+  "model": "DenseNet121",
+  "image_size": [
+    100,
+    100
+  ],
+  "batch_size": 16,
+  "epochs_requested": 7,
+  "epochs_completed": 7,
+  "class_indices": {
+    "CANCER": 0,
+    "NON CANCER": 1
+  },
+  "test_samples": 150,
+  "accuracy": 0.8266666666666667,
+  "macro_precision": 0.803951367781155,
+  "macro_recall": 0.8200000000000001,
+  "macro_f1": 0.8103481812876873,
+  "best_model_path": "densenet121_best.keras"
+}

@@ -1,0 +1,20 @@
+{
+  "model": "MobileNet",
+  "image_size": [
+    100,
+    100
+  ],
+  "batch_size": 16,
+  "epochs_requested": 7,
+  "epochs_completed": 7,
+  "class_indices": {
+    "CANCER": 0,
+    "NON CANCER": 1
+  },
+  "test_samples": 150,
+  "accuracy": 0.8866666666666667,
+  "macro_precision": 0.8678551216751557,
+  "macro_recall": 0.89,
+  "macro_f1": 0.8765192968863493,
+  "best_model_path": "mobilenet_best.keras"
+}
